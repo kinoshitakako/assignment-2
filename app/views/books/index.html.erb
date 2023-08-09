@@ -1,0 +1,127 @@
+<p id="notice"></p>
+<h1>Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>トラブル知らずのシステム設計</td>
+        <td>システム設計の要点を図解で説明してくれます</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>たのしいRuby</td>
+        <td>Rubyの入門におすすめです</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>入門Git</td>
+        <td>gitについての基本操作から内部構造まで解説してくれます</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>アルゴリズム図鑑</td>
+        <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>達人プログラマー</td>
+        <td>プログラマ入門者は必読！</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>データベース実践入門</td>
+        <td>効率的なSQL文を教えてくれます</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>aaaaaa</td>
+        <td>k</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>title</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>okhk</td>
+        <td>olkhvjhvgjh</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>r</td>
+        <td>k</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3</td>
+        <td><%= link_to "Show", book_path(book.id) %></td>
+        <td><%= link_to "Edit", edit_book_path(books.id) %> </td>
+        <td><%= link_to "Destroy", path(books.id) %></td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<form>
+	
+
+   <h2>New book</h2>
+   <%= form_with model: @book do |f| %>
+
+    <h4>Title</h4>
+    <%= f.book_field :title %>
+    
+ 
+    <h4>Body</h4>
+    <%= f.book_body :body %>
+    
+
+    <%= f.submit 'Create Book' %>
+    
+    </form>
+    
+    <% end %>
+    
+
+
+
+
+     
